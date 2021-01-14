@@ -7,8 +7,9 @@ export default function Home() {
       <h1 class="text-6xl font-black p-10 text-gray-700 text-center">ニャンちゅうメガホン</h1>
 
       <div class="mb-5 center">
-        <label for="firstname" class="font-bold mb-1 text-gray-700 block">テキストを入力するに゛ゃ゛</label>
+        <label for="input" class="font-bold mb-1 text-gray-700 block">テキストを入力するに゛ゃ゛</label>
           <textarea type="text"
+            id="input"
             class="form-textarea w-full px-4 py-3 h-24 test-center rounded-lg shadow-md focus:outline-none focus:ring-2 resize-none focus:shadow-outline text-gray-600 font-medium"
             placeholder="み゛ゃ゛ーの金言だに゛ゃ゛"/>
       </div>
@@ -20,8 +21,9 @@ export default function Home() {
       </div>
 
       <div class="mb-5 center">
-        <label for="firstname" class="font-bold mb-1 text-gray-700 block">出゛力゛だ゛に゛ゃ゛ぁ゛</label>
+        <label for="output" class="font-bold mb-1 text-gray-700 block">出゛力゛だ゛に゛ゃ゛ぁ゛</label>
           <textarea type="text"
+            id="output"
             class="form-textarea w-full px-4 py-3 h-24 test-center rounded-lg shadow-md focus:outline-none focus:ring-2 resize-none focus:shadow-outline text-gray-600 font-medium"
             placeholder="お゛お゛お゛お゛お゛ん゛"/>
       </div>
