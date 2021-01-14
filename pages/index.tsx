@@ -3,65 +3,41 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <body class="antialiased sans-serif bg-gray-200 container mx-auto">
+      <h1 class="text-6xl font-black p-10 text-gray-700 text-center">ニャンちゅうメガホン</h1>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <div class="mb-5 center">
+        <label for="firstname" class="font-bold mb-1 text-gray-700 block">テキストを入力するに゛ゃ゛</label>
+          <textarea type="text"
+            class="form-textarea w-full px-4 py-3 h-24 test-center rounded-lg shadow-md focus:outline-none focus:ring-2 resize-none focus:shadow-outline text-gray-600 font-medium"
+            placeholder="み゛ゃ゛ーの金言だに゛ゃ゛"/>
+      </div>
 
-        <p className="text-3xl text-red-500 font-bold">Hello Tailwind</p>
+      <div class="text-center">
+        <button 
+          class="w-60 focus:outline-none border border-transparent py-2 px-5 rounded-lg shadow-md text-center text-gray bg-gray-50 hover:bg-gray-100 font-medium"
+        >変換に゛ゃ゛</button>
+      </div>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+      <div class="mb-5 center">
+        <label for="firstname" class="font-bold mb-1 text-gray-700 block">出゛力゛だ゛に゛ゃ゛ぁ゛</label>
+          <textarea type="text"
+            class="form-textarea w-full px-4 py-3 h-24 test-center rounded-lg shadow-md focus:outline-none focus:ring-2 resize-none focus:shadow-outline text-gray-600 font-medium"
+            placeholder="お゛お゛お゛お゛お゛ん゛"/>
+      </div>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+      <div class="text-center">
+        <button 
+          class="w-60 focus:outline-none border border-transparent py-2 px-5 m-2 rounded-lg shadow-md text-center text-gray bg-gray-50 hover:bg-gray-100 font-medium"
+        >コ゛ピ゛ー゛</button>
+      </div>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+      <div class="text-center">
+        <button 
+          class="w-60 focus:outline-none border border-transparent py-2 px-5 m-2 rounded-lg shadow-md text-center text-white bg-blue-400 hover:bg-blue-500 font-medium"
+        >T゛w゛e゛e゛t゛</button>
+      </div>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+    </body>
   )
 }
