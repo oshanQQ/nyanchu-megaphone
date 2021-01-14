@@ -3,6 +3,7 @@ import React from 'react';
 export default function Home() {
   return (
     <main className="antialiased sans-serif bg-gray-200 container mx-auto">
+      <Title>ニャンちゅうメガホン</Title>
         />
       </div>
 
