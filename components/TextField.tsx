@@ -1,19 +1,28 @@
-import { randomString } from "../libs/utils";
-import { ChangeEvent, useMemo } from "react";
+import { randomString } from '../libs/utils';
+import { ChangeEvent, useEffect, useState } from 'react';
 
 type Props = {
   label: string;
   placeholder: string;
   onChange?: (event: ChangeEvent<HTMLTextAreaElement>) => void;
   value?: string;
-}
+};
 
-export const TextField: React.FC<Props> = ({ label, placeholder, onChange, value }) => {
-  const id = useMemo(() => randomString(), []);
+export const TextField: React.FC<Props> = ({
+  label,
+  placeholder,
+  onChange,
+  value,
+}) => {
+  const [id, setId] = useState('');
+  useEffect(() => {
+    setId(randomString());
+  }, []);
+
   return (
     <div className="mb-5 center">
       <label htmlFor={id} className="font-bold mb-1 text-gray-700 block">
-        { label }
+        {label}
       </label>
       <textarea
         id={id}
