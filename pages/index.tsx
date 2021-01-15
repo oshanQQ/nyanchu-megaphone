@@ -8,6 +8,7 @@ import { TweetButton } from '../components/TweetButton';
 export default function Home() {
   const [inputValue, setInputValue] = useState('');
   const [outputValue, setOutputValue] = useState('');
+
   return (
     <main className="antialiased sans-serif bg-gray-200 container mx-auto">
       <Title>ニャンちゅうメガホン</Title>
@@ -15,12 +16,13 @@ export default function Home() {
         label="テキストを入力するに゛ゃ゛"
         placeholder="み゛ゃ゛ーの金言だに゛ゃ゛"
         value={inputValue}
-        onChange={e => setInputValue(e.target.value)}
+        onChange={(e) => setInputValue(e.target.value)}
       />
       <CenteringBox>
         <NormalButton
-          onClick={() => setOutputValue(inputValue)}
-        >
+          onClick={() =>
+            setOutputValue(inputValue.split('').join('゛') + '゛')
+          }>
           変換に゛ゃ゛
         </NormalButton>
       </CenteringBox>
