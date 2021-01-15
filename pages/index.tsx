@@ -10,7 +10,7 @@ export default function Home() {
   const [outputValue, setOutputValue] = useState('');
 
   return (
-    <main className="antialiased sans-serif bg-gray-200 container mx-auto">
+    <main className="antialiased sans-serif container mx-auto ">
       <Title>ニャンちゅうメガホン</Title>
       <TextField
         label="テキストを入力するに゛ゃ゛"
