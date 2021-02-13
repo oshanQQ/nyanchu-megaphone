@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.gatsbyjs.com">
-    <img src="icon.png" width="60" />
+    <img src="icon.png" width="90" />
   </a>
 </p>
 <h1 align="center">
