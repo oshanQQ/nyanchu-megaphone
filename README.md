@@ -1,3 +1,12 @@
+<p align="center">
+  <a href="https://www.gatsbyjs.com">
+    <img src="icon.png" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  ニャンちゅうメガホン
+</h1>
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
