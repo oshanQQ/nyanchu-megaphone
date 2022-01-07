@@ -4,12 +4,26 @@ import { useState } from "react";
 import styles from "../../styles/Home.module.scss";
 
 const Home: NextPage = () => {
-  const [text, setText] = useState("");
-  const handleTextChange = (event: any) => {
-    setText(event.target.value);
+  const [inputText, setInputText] = useState("");
+
+  const assignOnChange = (event: any) => {
+    setInputText(event.target.value);
   };
-  const handleSubmit = () => {
-    console.log(text);
+
+  const copyTextToClipboard = (text: string) => {
+    navigator.clipboard.writeText(text).then(
+      () => {
+        console.log("'" + text + "'" + "was coppied!");
+      },
+      (err) => {
+        console.log(err + ": Could not copy");
+      }
+    );
+  };
+
+  const convertText = (text: string) => {
+    const isEmpty = text === "";
+    return isEmpty ? "" : text.split("").join("゛") + "゛";
   };
 
   return (
@@ -21,8 +35,11 @@ const Home: NextPage = () => {
       </Head>
 
       <div>nyanchu-megaphone</div>
-      <input type="text" value={text} onChange={handleTextChange} />
-      <button onClick={handleSubmit}>Submit</button>
+      <textarea value={inputText} onChange={assignOnChange} />
+      <textarea value={convertText(inputText)} />
+      <button onClick={() => copyTextToClipboard(convertText(inputText))}>
+        コ゛ピ゛ー゛
+      </button>
     </div>
   );
 };
