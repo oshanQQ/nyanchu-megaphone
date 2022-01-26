@@ -1,12 +1,17 @@
 module.exports = {
   mode: "jit",
-  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  purge: [
+    "./src/pages/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+  ],
   content: [],
   theme: {
     extend: {
       colors: {
-        "nyanchu-blue": "4B8EF2",
-        "nyanchu-yellow": "FFF7CC",
+        transparent: "transparent",
+        current: "currentColor",
+        "nyanchu-blue": "#4B8EF2",
+        "nyanchu-yellow": "#FFF7CC",
       },
     },
   },
