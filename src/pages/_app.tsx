@@ -1,5 +1,5 @@
 import { AppProps } from "next/app";
-import "../styles/globals.css";
+import "src/styles/globals.css";
 
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
   return <Component {...pageProps} />;
