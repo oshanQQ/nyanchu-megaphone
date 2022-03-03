@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@emotion/babel-plugin": "^11.7.2",
+    "@emotion/babel-preset-css-prop": "^11.2.0",
     "@emotion/react": "^11.8.1",
     "@types/styled-components": "^5.1.23",
     "babel-plugin-styled-components": "^2.0.6",
