@@ -10,4 +10,8 @@ module.exports = {
   core: {
     builder: "webpack5",
   },
+  babel: async (options) => ({
+    ...options,
+    presets: [...options.presets, "@emotion/babel-preset-css-prop"],
+  }),
 };

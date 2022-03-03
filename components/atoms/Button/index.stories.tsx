@@ -1,14 +1,10 @@
 import React from "react";
 import { ComponentMeta } from "@storybook/react";
-import Button from ".";
+import Form from ".";
 
 export default {
   title: "Button",
-  component: Button,
-} as ComponentMeta<typeof Button>;
+  component: Form,
+} as ComponentMeta<typeof Form>;
 
-export const Default1 = () => <Button>{"Click me"}</Button>;
-
-export const Default2 = () => <Button>{"Click me"}</Button>;
-
-export const Default3 = () => <Button>{"Click me"}</Button>;
+export const Default1 = () => <Form />;
