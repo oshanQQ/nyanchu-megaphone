@@ -3,7 +3,7 @@ import { ComponentMeta } from "@storybook/react";
 import Form from ".";
 
 export default {
-  title: "Button",
+  title: "Form",
   component: Form,
 } as ComponentMeta<typeof Form>;
 
